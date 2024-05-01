@@ -8,6 +8,9 @@ from sklearn import metrics
 X_test = pickle.load(open('X_test.sav', 'rb'))
 y_test = pickle.load(open('y_test.sav', 'rb'))
 X_train = pickle.load(open('X_train.sav', 'rb'))
+with open('X_test.sav', 'rb') as file:
+    X_test = pickle.load(file)
+
 
 # Dictionary for labels
 dic = {0: 'Bad', 1: 'Good'}
